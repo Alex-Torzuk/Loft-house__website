@@ -22,12 +22,41 @@ a {
 }
 
 .container {
-    margin: o auto;
+    margin: 0 auto;
     padding: 0 15px;
-    width: 1400px;
+
+    // Подправил width ... было - 1140px
+    max-width: 1140px;
+
+
+    &--sm{
+        max-width: 840px;
+    }
 }
 
 .text-right {
     text-align: right;
-    margin-right: 50px;
+
+    // Подправил margin
+    // margin-right: 50px;
+}
+
+
+.visually-hidden {
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    white-space: nowrap;
+
+}
+
+.title-2 {
+    font-size: 36px;
+    font-family: $font-accent;
+    color: $accent;
+    font-weight: 700;
 }
