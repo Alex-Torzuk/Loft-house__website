@@ -6,10 +6,13 @@
 
 @import './base/base';
 
+@import './base/mixins';
+
 //blocks
 
 @import './blocks/header';
 @import './blocks/nav';
+@import './blocks/nav-icon';
 @import './blocks/info';
 @import './blocks/benefits';
 @import './blocks/appartments';
@@ -20,4 +23,5 @@
 @import './blocks/section-map';
 @import './blocks/feedback';
 @import './blocks/footer';
+
 
