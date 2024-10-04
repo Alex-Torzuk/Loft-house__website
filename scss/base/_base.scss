@@ -1,72 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@100..900&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@100..900&family=Roboto:wght@300&display=swap");
 
-
-
-body{
-    
-        font-family: $font-main;
-        background-color: $dark;
-        color: $white;
-        font-size: 16px;
-        
-    
+body {
+  font-family: $font-main;
+  background-color: $dark;
+  color: $white;
+  font-size: 16px;
 }
 
 .none {
-    display: none;
+  display: none;
 }
 
 a {
-    color: $white;
+  color: $white;
 
-    transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
 
-    &:hover {
-        color: $accent;
-    }
+  &:hover {
+    color: $accent;
+  }
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 15px;
+  margin: 0 auto;
+  padding: 0 15px;
 
-    // Подправил width ... было - 1140px
-    max-width: 1140px;
+  // Подправил width ... было - 1140px
+  max-width: 1140px;
 
-
-    &--sm{
-        max-width: 840px;
-    }
+  &--sm {
+    max-width: 840px;
+  }
 }
 
 .text-right {
-    text-align: right;
+  text-align: right;
 
-    // Подправил margin
-    // margin-right: 50px;
+  // Подправил margin
+  // margin-right: 50px;
 }
 
-
 .visually-hidden {
-    height: 1px;
-    overflow: hidden;
-    width: 1px;
-    position: absolute;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    white-space: nowrap;
-
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .title-2 {
-    font-size: 36px;
-    font-family: $font-accent;
-    color: $accent;
-    font-weight: 700;
+  font-size: 36px;
+  font-family: $font-accent;
+  color: $accent;
+  font-weight: 700;
+
+  //   @include mediaTablet {
+  //     font-size: 28px;
+  //   }
 }
 
 .link-bold {
-    color: $accent;
-    font-weight: 700;
+  color: $accent;
+  font-weight: 700;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
